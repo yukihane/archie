@@ -171,6 +171,25 @@ ul > li::before {
   color: var(--color-primary, #dc143c);
 }
 
+/* Use native markers in article content so paragraphs keep their block layout. */
+.body ul {
+  list-style-type: '* ';
+  list-style-position: outside;
+}
+
+.body ul li {
+  text-indent: 0;
+}
+
+.body ul > li::before {
+  content: none;
+}
+
+.body ul > li::marker {
+  font-weight: bold;
+  color: var(--color-primary, #dc143c);
+}
+
 /* Images */
 img {
   border: 3px solid var(--color-background-pre, #ececec);

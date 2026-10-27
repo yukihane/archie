@@ -1,7 +1,7 @@
 ---
 title: "Hugo shortcodes"
 date: 2018-03-18T12:13:36+05:30
-description: Here is a demo of all shortcodes available in Hugo.
+description: Examples of Hugo's built-in shortcodes and Archie's callouts.
 ---
 
 ## Images
@@ -10,17 +10,17 @@ description: Here is a demo of all shortcodes available in Hugo.
 
 {{< figure src="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" title="Dave Herring" >}}
 
-## Github Gist
+## GitHub Gist
 
-{{< gist spf13 7896402 >}}
+Hugo no longer provides a built-in Gist shortcode. [View the example Gist on GitHub](https://gist.github.com/spf13/7896402).
 
 ## Youtube video
 
 {{< youtube w7Ft2ymGmfc >}}
 
-## Tweet
+## X (Twitter)
 
-{{< tweet user="GoHugoIO" id="877500564405444608" >}}
+{{< x user="GoHugoIO" id="877500564405444608" >}}
 
 ## Vimeo
 

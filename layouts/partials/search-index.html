@@ -1,5 +1,8 @@
 {{- $index := slice -}}
 {{- $mainSections := .Site.Params.mainSections | default (slice) -}}
+{{- if isset .Site.Params "searchsections" -}}
+  {{- $mainSections = .Site.Params.searchSections -}}
+{{- end -}}
 {{- $useMainSections := gt (len $mainSections) 0 -}}
 {{- $currentPage := .RelPermalink -}}
 {{- with .OutputFormats.Get "html" -}}

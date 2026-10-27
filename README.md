@@ -135,6 +135,16 @@ The generated search page indexes the same content surface as the home page when
 `params.mainSections` is set. Otherwise it falls back to all regular pages,
 excluding hidden content and the search page itself.
 
+To select search sections independently of the home page, set `params.searchSections`:
+
+```toml
+[params]
+searchSections = ["blog", "docs"]
+```
+
+Set `searchSections = []` to search all regular pages. When omitted, search keeps
+using `params.mainSections` as described above.
+
 ## Config of the Demo Site
 
 ```toml
